@@ -138,7 +138,7 @@
 .reference-event-copy p{font:italic 13px/1.5 Georgia,serif;color:#8c6239;margin:0}
 .event-details-note{margin:23px auto 0;color:#8c6239;font:12px Georgia,serif}
 .gallery-grid .photo:before,.gallery-grid .photo:after{content:none}
-.photo:nth-child(1){background:linear-gradient(180deg,#4d2c2130,#281a1280),url("./images/imgl.jpg") center 45%/cover}
+.photo:nth-child(1){background:linear-gradient(180deg,#4d2c2130,#281a1280),url("./images/img1.jpg") center 45%/cover}
 .photo:nth-child(2){background:linear-gradient(180deg,#4d2c2110,#281a127d),url("./images/img2.jpeg") center 40%/cover}
 .photo:nth-child(3){background:linear-gradient(180deg,#4d2c2110,#281a1280),url("./images/img3.jpeg") center 40%/cover}
 .photo:nth-child(4){background:linear-gradient(180deg,#4d2c2110,#281a1280),url("./images/img4.jpeg") center/cover}
@@ -252,6 +252,96 @@
  .reference-event-gallery{grid-template-columns:1fr!important; gap:18px!important;}
  .reference-event-gallery>.reference-event-card>img{width:100%!important; height:auto!important; aspect-ratio:auto!important; object-fit:contain!important;}
  .reference-event-gallery>.reference-event-card>.reference-event-copy{padding:16px!important;}
+}
+</style>
+
+<style id="mobile-hero-responsive-fix">
+/* Mobile hero: keep all invitation text inside the decorative oval */
+@media (max-width: 620px) {
+  .hero {
+    min-height: 640px !important;
+    padding: 42px 14px 38px !important;
+    overflow: hidden;
+  }
+  .hero:before {
+    width: min(112vw, 440px) !important;
+    height: calc(100% - 22px) !important;
+    aspect-ratio: auto !important;
+    border-radius: 50% !important;
+  }
+  .hero:after {
+    width: min(100vw, 400px) !important;
+    height: calc(100% - 58px) !important;
+    aspect-ratio: auto !important;
+    border-radius: 50% !important;
+  }
+  .hero-content {
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .hero .eyebrow {
+    font-size: clamp(7px, 2.2vw, 9px);
+    letter-spacing: clamp(1px, .42vw, 1.8px);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+  .hero .hindi {
+    font-size: clamp(12px, 3.7vw, 14px) !important;
+    line-height: 1.7;
+  }
+  .hero .names {
+    width: 100%;
+    font-size: clamp(32px, 9.2vw, 47px) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -.5px;
+    margin: 7px 0;
+  }
+  .hero .names span {
+    max-width: 100%;
+    padding: 4px 0;
+    overflow-wrap: anywhere;
+  }
+  .hero .names em {
+    font-size: clamp(24px, 7vw, 31px) !important;
+    line-height: 1.05;
+  }
+  .hero .divider { margin: 13px auto; }
+  .hero .hero-copy {
+    font-size: clamp(12px, 3.6vw, 14px) !important;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+  }
+  .hero .hero-copy.hindi {
+    font-size: clamp(11px, 3.25vw, 12px) !important;
+    line-height: 1.7;
+  }
+  .hero .date-row {
+    gap: 6px;
+    margin-top: 18px;
+    max-width: 100%;
+  }
+  .hero .date-line { width: clamp(8px, 3.5vw, 15px); flex-shrink: 0; }
+  .hero .date-row small { font-size: 7px; letter-spacing: 1.8px; }
+  .hero .date-row strong { font-size: clamp(16px, 4.8vw, 19px) !important; }
+  .hero .date-row .hindi { font-size: clamp(9px, 2.8vw, 10px) !important; }
+  .hero .scroll {
+    margin-top: 20px;
+    font-size: 7px;
+    letter-spacing: 1.5px;
+    gap: 7px;
+  }
+  .hero-flower { font-size: 76px !important; }
+}
+@media (max-width: 360px) {
+  .hero { padding-left: 10px !important; padding-right: 10px !important; }
+  .hero .names { font-size: clamp(29px, 8.8vw, 32px) !important; }
+  .hero .hero-copy { font-size: 11px !important; }
+  .hero .date-row strong { font-size: 15px !important; }
 }
 </style>
 </head>
